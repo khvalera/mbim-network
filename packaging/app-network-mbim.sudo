@@ -1,0 +1,2 @@
+webconfig ALL = NOPASSWD: /bin/mbimcli
+%webconfig ALL = NOPASSWD: /bin/mbimcli
