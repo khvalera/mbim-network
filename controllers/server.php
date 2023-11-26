@@ -78,7 +78,6 @@ class Server extends Daemon {
      * Status.
      * @return view
      */
-    /*
     function status() {
         header('Cache-Control: no-cache, must-revalidate');
         header('Content-type: application/json');
@@ -94,7 +93,6 @@ class Server extends Daemon {
 
         echo json_encode($status);
     }
-    */
 
     /**
      * Start.
