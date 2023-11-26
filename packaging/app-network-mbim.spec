@@ -33,8 +33,10 @@ This package provides the core API and libraries.
 
 %install
 mkdir -p -m 755 %{buildroot}/usr/clearos/apps/network_mbim
+mkdir -p -m 755 %{buildroot}/usr/lib/systemd/system
 cp -r * %{buildroot}/usr/clearos/apps/network_mbim/
 install -D -m 0644 packaging/network-mbim.php %{buildroot}/var/clearos/base/daemon/network-mbim.php
+install -D -m 0644 packaging/network-mbim.service %{buildroot}/usr/lib/systemd/system/network-mbim.service
 rm -R %{buildroot}/usr/clearos/apps/network_mbim/packaging
 
 %post
@@ -62,3 +64,4 @@ logger -p local6.notice -t installer 'app-network-mbim-core - uninstalling'
 /usr/clearos/apps/network_mbim/language
 /usr/clearos/apps/network_mbim/libraries
 /var/clearos/base/daemon/network-mbim.php
+/usr/lib/systemd/system/network-mbim.service
