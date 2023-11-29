@@ -7,3 +7,6 @@ https://www.clearos.com
 To build a package from sources you need to use the console command:
 
    clearos local
+
+# Appearance
+![Appearance](screenshot.png)
